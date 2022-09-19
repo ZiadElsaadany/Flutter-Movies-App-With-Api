@@ -16,8 +16,7 @@ class PopularMovies {
     _totalPages = totalPages;
     _totalResults = totalResults;
 }
-
-  PopularMovies.fromJson(dynamic json) {
+ PopularMovies.fromJson(dynamic json) {
     _page = json['page'];
     if (json['results'] != null) {
       _results = [];

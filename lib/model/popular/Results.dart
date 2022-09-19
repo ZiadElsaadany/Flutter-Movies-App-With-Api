@@ -16,10 +16,11 @@
 class Results {
 
   Results({
+     this.checkWatchOrnot=false,
       bool? adult, 
       String? backdropPath, 
       List<num>? genreIds, 
-      num? id, 
+      num? id,
       String? originalLanguage, 
       String? originalTitle, 
       String? overview, 
@@ -62,6 +63,7 @@ class Results {
     _voteAverage = json['vote_average'];
     _voteCount = json['vote_count'];
   }
+  bool   checkWatchOrnot= false;
   bool? _adult;
   String? _backdropPath;
   List<num>? _genreIds;

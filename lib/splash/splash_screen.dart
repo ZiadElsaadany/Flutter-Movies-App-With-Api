@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   startDelay(){
     timer=Timer(const Duration(
-        milliseconds: 5000
+        milliseconds: 3000
     ), ()=> goNext()
     );
   }
@@ -40,12 +40,14 @@ class _SplashScreenState extends State<SplashScreen> {
         children: [
           const Spacer(flex: 3,),
           Center(child: Image.asset('assets/image/movies.png',width: 180,height: 180,)),
+          const SizedBox(height: 50,),
+          const CircularProgressIndicator(color: Colors.orange),
           const Spacer(flex: 2,),
           const Padding(
             padding: EdgeInsets.only(bottom: 60.0),
             child: Text('Ziad Elsaadany',style:TextStyle(
                 color:  Color(0xffFFBB3B) ,
-            fontSize: 18,
+            fontSize: 14,
               fontWeight: FontWeight.bold
             ),),
           )
