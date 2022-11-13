@@ -269,7 +269,6 @@ class ApiManager extends ChangeNotifier {
     resultsSearch = [];
     searchMoviesLoading = true;
     notifyListeners();
-
     try {
       var url = Uri.https(
           baseUrl,
